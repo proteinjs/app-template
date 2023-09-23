@@ -3,33 +3,26 @@
     "version": "0.1",
     "scripts": {
         "test": "jest",
-        "build": "reflection-build && tsc"
+        "build": "reflection-build && webpack"
     },
     "devDependencies": {
         "@brentbahry/reflection-build": "file:../../components/reflection-build",
-        "@types/jest": "^26.0.24",
-        "@types/node": "^20.6.3",
-        "@types/react": "18.2.22",
-        "@types/react-dom": "18.2.7",
-        "jest": "^26.6.3",
-        "ts-jest": "^26.5.6",
-        "ts-loader": "^9.4.4",
+        "@types/node": "14.0.13",
+        "@types/react": "16.9.49",
+        "@types/react-dom": "16.9.8",
+        "ts-loader": "8.0.3",
+        "typescript": "3.9.5",
         "webpack": "^5.88.2",
         "webpack-cli": "^5.1.4"
     },
     "dependencies": {
         "@brentbahry/reflection": "file:../../components/reflection",
-        "@emotion/react": "11.11.1",
-        "@emotion/styled": "11.11.0",
-        "@mui/material": "5.14.10",
+        "@material-ui/core": "4.11.0",
         "@proteinjs/ui": "file:../../components/ui",
         "@proteinjs/user": "file:../../components/user",
-        "react": "18.2.0",
-        "react-dom": "18.2.0"
+        "react": "16.13.1",
+        "react-dom": "16.13.1"
     },
     "main": "./dist/generated/index.js",
-    "types": "./dist/generated/index.d.ts",
-    "overrides": {
-        "@types/react": "18.2.22"
-    }
+    "types": "./dist/generated/index.d.ts"
 }

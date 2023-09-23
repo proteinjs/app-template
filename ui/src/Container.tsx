@@ -1,19 +1,24 @@
 import React from 'react';
-import { ThemeProvider } from '@emotion/react';
+import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
+import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
 import { AuthenticatedPageContainer } from '@proteinjs/user';
 import { Page } from '@proteinjs/ui';
 
-const theme = {
-    spacing: 8,
-}
+const generateClassName = createGenerateClassName({
+    productionPrefix: 'neuragraffiti',
+});
+  
+const theme = createMuiTheme({
+    spacing: 8
+});
 
 export function ThemedContainer(props: React.PropsWithChildren<{}>) {
     return (
-        // <ThemeProvider theme={theme}>
-        <div>
-            {props.children}
-        </div>
-        // </ThemeProvider>
+        <StylesProvider generateClassName={generateClassName}>
+            <ThemeProvider theme={theme}>
+                {props.children}
+            </ThemeProvider>
+        </StylesProvider>
     );
 }
 
