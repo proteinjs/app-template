@@ -1,14 +1,35 @@
 {
-  "name": "@brentbahry/neuragraffiti-ui",
-  "version": "0.1",
-  "scripts": {
-    "start": "node ./dist/index.js",
-    "test": "jest",
-    "watch": "tsc -w -p ."
-  },
-  "devDependencies": {
-    "@types/jest": "^26.0.24",
-    "jest": "^26.6.3",
-    "ts-jest": "^26.5.6"
-  }
+    "name": "@brentbahry/neuragraffiti-ui",
+    "version": "0.1",
+    "scripts": {
+        "test": "jest",
+        "build": "reflection-build && tsc"
+    },
+    "devDependencies": {
+        "@brentbahry/reflection-build": "file:../../components/reflection-build",
+        "@types/jest": "^26.0.24",
+        "@types/node": "^20.6.3",
+        "@types/react": "18.2.22",
+        "@types/react-dom": "18.2.7",
+        "jest": "^26.6.3",
+        "ts-jest": "^26.5.6",
+        "ts-loader": "^9.4.4",
+        "webpack": "^5.88.2",
+        "webpack-cli": "^5.1.4"
+    },
+    "dependencies": {
+        "@brentbahry/reflection": "file:../../components/reflection",
+        "@emotion/react": "11.11.1",
+        "@emotion/styled": "11.11.0",
+        "@mui/material": "5.14.10",
+        "@proteinjs/ui": "file:../../components/ui",
+        "@proteinjs/user": "file:../../components/user",
+        "react": "18.2.0",
+        "react-dom": "18.2.0"
+    },
+    "main": "./dist/generated/index.js",
+    "types": "./dist/generated/index.d.ts",
+    "overrides": {
+        "@types/react": "18.2.22"
+    }
 }
