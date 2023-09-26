@@ -17,5 +17,6 @@ export const serverConfig: ServerConfig = {
     session: {
         secret: 'totally secret',
         store: new DbSessionStore()
-    }
+    },
+    port: 3000,
 }
