@@ -11,7 +11,6 @@ const webpack5esmInteropRule = {
 };
 
 module.exports = {
-  // entry: './generated/index.ts',
   mode: 'development',
   devtool: 'inline-source-map',
   entry: {
@@ -23,11 +22,6 @@ module.exports = {
     path: path.join(__dirname, 'dist'),
     library: '[name]'
   },
-  // output: {
-  //   path: path.join(__dirname, 'dist'),
-  //   filename: 'index.js',
-  //   library: 'app'
-  // },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
     alias: {
@@ -36,19 +30,14 @@ module.exports = {
       'react': path.join(__dirname, '/node_modules/react'),
       'process': 'process/browser',
     },
+    // provide shims for node libraries for webpack >= 5
     fallback: { 
-      // "crypto": false,
-      // "util": false,
-      // "events": false,
-      // "url": false,
-      // "buffer": false,
       'crypto': require.resolve('crypto-browserify'),
       'util': require.resolve('util/'),
       'events': require.resolve('events/'),
       'url': require.resolve('url/'),
       'buffer': require.resolve('buffer/'),
       'stream': require.resolve('stream-browserify'),
-      // 'process': require.resolve('process/browser'),
       'process/browser': require.resolve('process/browser'),
     },
   },
