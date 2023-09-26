@@ -4,7 +4,6 @@ import { Page, Form, Fields, textField, FormButtons, clearButton, FormPage } fro
 export const helloPage: Page = {
     name: 'Hello',
     path: 'helloo',
-    public: true,
     component: () => (
         <FormPage>
             <Form<HelloFields, typeof buttons>
