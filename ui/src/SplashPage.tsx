@@ -6,7 +6,7 @@ export const splashPage: Page = {
     path: '/',
     component: () => (
         <div>
-          Welcome to Neuragraffiti!
+          Welcome to appName!
         </div>
     )
 }

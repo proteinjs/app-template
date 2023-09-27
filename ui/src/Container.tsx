@@ -5,7 +5,7 @@ import { AuthenticatedPageContainer } from '@proteinjs/user';
 import { Page } from '@proteinjs/ui';
 
 const generateClassName = createGenerateClassName({
-    productionPrefix: 'neuragraffiti',
+    productionPrefix: 'appName',
 });
   
 const theme = createMuiTheme({
@@ -25,7 +25,7 @@ export function ThemedContainer(props: React.PropsWithChildren<{}>) {
 export function PageContainer(props: { page: Page }) {
     return (
         <ThemedContainer>
-            <AuthenticatedPageContainer appName='Neuragraffiti' page={props.page} />
+            <AuthenticatedPageContainer appName='appName' page={props.page} />
         </ThemedContainer>
     );
 }
