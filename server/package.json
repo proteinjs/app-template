@@ -1,5 +1,5 @@
 {
-    "name": "@brentbahry/neuragraffiti-server",
+    "name": "@brentbahry/app-template-server",
     "version": "0.1",
     "main": "./dist/generated/index.js",
     "scripts": {

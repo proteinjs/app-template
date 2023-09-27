@@ -1,5 +1,5 @@
 {
-    "name": "@brentbahry/neuragraffiti-ui",
+    "name": "@brentbahry/app-template-ui",
     "version": "0.1",
     "scripts": {
         "test": "jest",
