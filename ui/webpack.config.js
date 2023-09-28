@@ -15,7 +15,7 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     app: './generated/index.ts',
-    vendor: ['@material-ui/core', '@material-ui/styles']
+    // vendor: ['@material-ui/core', '@material-ui/styles']
   },
   output: {
     filename: '[name].js',
@@ -50,15 +50,14 @@ module.exports = {
   },
   optimization: {
     splitChunks: {
-        cacheGroups: {
-            default: false,
-            vendors: false,
-            vendor: {
-                // name: 'vendor',
-                chunks: 'all',
-                test: /node_modules/
-            }
+      cacheGroups: {
+        vendor: {
+          test: /[\\/]node_modules[\\/]/,  // Matches node_modules folder
+          name: 'vendor',
+          chunks: 'all',
+          priority: -10
         }
+      }
     }
   },
   plugins: [
