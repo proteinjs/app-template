@@ -53,7 +53,7 @@ const buttons: FormButtons<HelloFields> = {
 		name: 'submit',
 		style: {
 			color: 'primary',
-			border: true
+			variant: 'solid',
 		},
 		onClick: async (fields: HelloFields, buttons: FormButtons<HelloFields>) => {
 			console.log(`Submitted form, name: ${fields.name.field.value}`)

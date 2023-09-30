@@ -1,6 +1,10 @@
 /** Load Dependency Source Graphs */
 
 import '@brentbahry/reflection';
+import '@emotion/react';
+import '@emotion/styled';
+import '@mui/joy';
+import '@mui/material';
 import '@proteinjs/ui';
 import '@proteinjs/user';
 import 'react';
@@ -9,7 +13,7 @@ import 'react-dom';
 
 /** Generate Source Graph */
 
-const sourceGraph = "{\"options\":{\"directed\":true,\"multigraph\":false,\"compound\":false},\"nodes\":[{\"v\":\"@brentbahry/neuragraffiti-ui/helloPage\",\"value\":{\"packageName\":\"@brentbahry/neuragraffiti-ui\",\"name\":\"helloPage\",\"filePath\":\"/Users/brentbahry/repos/neuragraffiti/ui/src/Hello.tsx\",\"qualifiedName\":\"@brentbahry/neuragraffiti-ui/helloPage\",\"type\":{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":[{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":null}]},\"isExported\":true,\"isConst\":true,\"sourceType\":0}},{\"v\":\"@proteinjs/ui/Page\"},{\"v\":\"@brentbahry/neuragraffiti-ui/splashPage\",\"value\":{\"packageName\":\"@brentbahry/neuragraffiti-ui\",\"name\":\"splashPage\",\"filePath\":\"/Users/brentbahry/repos/neuragraffiti/ui/src/SplashPage.tsx\",\"qualifiedName\":\"@brentbahry/neuragraffiti-ui/splashPage\",\"type\":{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":[{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":null}]},\"isExported\":true,\"isConst\":true,\"sourceType\":0}}],\"edges\":[{\"v\":\"@brentbahry/neuragraffiti-ui/helloPage\",\"w\":\"@proteinjs/ui/Page\",\"value\":\"has type\"},{\"v\":\"@brentbahry/neuragraffiti-ui/splashPage\",\"w\":\"@proteinjs/ui/Page\",\"value\":\"has type\"}]}";
+const sourceGraph = "{\"options\":{\"directed\":true,\"multigraph\":false,\"compound\":false},\"nodes\":[{\"v\":\"@brentbahry/app-template-ui/helloPage\",\"value\":{\"packageName\":\"@brentbahry/app-template-ui\",\"name\":\"helloPage\",\"filePath\":\"/Users/brentbahry/repos/app-template/ui/src/Hello.tsx\",\"qualifiedName\":\"@brentbahry/app-template-ui/helloPage\",\"type\":{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":[{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":null}]},\"isExported\":true,\"isConst\":true,\"sourceType\":0}},{\"v\":\"@proteinjs/ui/Page\"},{\"v\":\"@brentbahry/app-template-ui/splashPage\",\"value\":{\"packageName\":\"@brentbahry/app-template-ui\",\"name\":\"splashPage\",\"filePath\":\"/Users/brentbahry/repos/app-template/ui/src/SplashPage.tsx\",\"qualifiedName\":\"@brentbahry/app-template-ui/splashPage\",\"type\":{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":[{\"packageName\":\"@proteinjs/ui\",\"name\":\"Page\",\"filePath\":null,\"qualifiedName\":\"@proteinjs/ui/Page\",\"typeParameters\":[],\"directParents\":null}]},\"isExported\":true,\"isConst\":true,\"sourceType\":0}}],\"edges\":[{\"v\":\"@brentbahry/app-template-ui/helloPage\",\"w\":\"@proteinjs/ui/Page\",\"value\":\"has type\"},{\"v\":\"@brentbahry/app-template-ui/splashPage\",\"w\":\"@proteinjs/ui/Page\",\"value\":\"has type\"}]}";
 
 
 /** Generate Source Links */
@@ -18,8 +22,8 @@ import { helloPage } from '../src/Hello';
 import { splashPage } from '../src/SplashPage';
 
 const sourceLinks = {
-	'@brentbahry/neuragraffiti-ui/helloPage': helloPage,
-	'@brentbahry/neuragraffiti-ui/splashPage': splashPage,
+	'@brentbahry/app-template-ui/helloPage': helloPage,
+	'@brentbahry/app-template-ui/splashPage': splashPage,
 };
 
 

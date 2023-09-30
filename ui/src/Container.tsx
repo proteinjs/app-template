@@ -1,24 +1,17 @@
 import React from 'react';
-import { createMuiTheme, ThemeProvider } from '@material-ui/core/styles';
-import { StylesProvider, createGenerateClassName } from '@material-ui/core/styles';
+import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
 import { AuthenticatedPageContainer } from '@proteinjs/user';
 import { Page } from '@proteinjs/ui';
 
-const generateClassName = createGenerateClassName({
-    productionPrefix: 'appName',
-});
-  
-const theme = createMuiTheme({
-    spacing: 8
+const theme = extendTheme({
+  spacing: 8,
 });
 
 export function ThemedContainer(props: React.PropsWithChildren<{}>) {
     return (
-        <StylesProvider generateClassName={generateClassName}>
-            <ThemeProvider theme={theme}>
+            <CssVarsProvider theme={theme}>
                 {props.children}
-            </ThemeProvider>
-        </StylesProvider>
+            </CssVarsProvider>
     );
 }
 
