@@ -15,7 +15,6 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     app: './generated/index.ts',
-    // vendor: ['@material-ui/core', '@material-ui/styles']
   },
   output: {
     filename: '[name].js',
