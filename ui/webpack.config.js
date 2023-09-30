@@ -25,10 +25,10 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
     alias: {
-      '@material-ui/styles': path.join(__dirname, '/node_modules/@proteinjs/ui/node_modules/@material-ui/styles'),
-      '@material-ui/core/styles': path.join(__dirname, '/node_modules/@proteinjs/ui/node_modules/@material-ui/core/styles'),
       'react': path.join(__dirname, '/node_modules/react'),
       'process': 'process/browser',
+      '@mui/joy': path.join(__dirname, '/node_modules/@mui/joy'),
+      '@mui/material': path.join(__dirname, '/node_modules/@mui/material'),
     },
     // provide shims for node libraries for webpack >= 5
     fallback: { 
