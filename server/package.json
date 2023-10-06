@@ -16,6 +16,7 @@
     },
     "dependencies": {
         "@brentbahry/reflection": "file:../../components/reflection",
+        "@proteinjs/db-driver": "file:../../components/db/driver",
         "@proteinjs/server": "file:../../components/server/server",
         "@proteinjs/server-api": "file:../../components/server/api",
         "@proteinjs/user": "file:../../components/user"
