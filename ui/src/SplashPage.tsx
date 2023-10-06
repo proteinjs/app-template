@@ -5,6 +5,7 @@ import { Typography, Grid } from '@mui/joy';
 export const splashPage: Page = {
     name: 'Splash Page',
     path: '/',
+    public: true,
     component: () => (
         <FormPage>
           <Grid 
