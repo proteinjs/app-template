@@ -23,6 +23,7 @@
         "webpack-cli": "5.1.4"
     },
     "dependencies": {
+        "@brentbahry/app-template-tables": "file:../tables",
         "@brentbahry/reflection": "file:../../components/reflection",
         "@emotion/react": "11.11.1",
         "@emotion/styled": "11.11.0",

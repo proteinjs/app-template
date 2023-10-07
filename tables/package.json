@@ -1,12 +1,11 @@
 {
-    "name": "@brentbahry/app-template-server",
+    "name": "@brentbahry/app-template-tables",
     "version": "0.1",
     "main": "./dist/generated/index.js",
     "scripts": {
         "start": "node ./dist/index.js",
         "test": "jest",
-        "build": "reflection-build && tsc",
-        "dev": "DEVELOPMENT=true node dist/generated/index.js"
+        "build": "reflection-build && tsc"
     },
     "devDependencies": {
         "@brentbahry/reflection-build": "file:../../components/reflection-build",
@@ -15,12 +14,8 @@
         "ts-jest": "^26.5.6"
     },
     "dependencies": {
-        "@brentbahry/app-template-tables": "file:../tables",
         "@brentbahry/reflection": "file:../../components/reflection",
-        "@proteinjs/db-driver": "file:../../components/db/driver",
-        "@proteinjs/server": "file:../../components/server/server",
-        "@proteinjs/server-api": "file:../../components/server/api",
-        "@proteinjs/user": "file:../../components/user"
+        "@proteinjs/db": "file:../../components/db/db"
     },
     "types": "./dist/generated/index.d.ts"
 }
