@@ -5,7 +5,8 @@
     "scripts": {
         "start": "node ./dist/index.js",
         "test": "jest",
-        "build": "reflection-build && tsc"
+        "build": "reflection-build && tsc",
+        "watch": "reflection-watch"
     },
     "devDependencies": {
         "@brentbahry/reflection-build": "file:../../components/reflection-build",

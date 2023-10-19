@@ -6,6 +6,7 @@
         "start": "node ./dist/index.js",
         "test": "jest",
         "build": "reflection-build && tsc",
+        "watch": "reflection-watch",
         "dev": "DEVELOPMENT=true node dist/generated/index.js"
     },
     "devDependencies": {
