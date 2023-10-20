@@ -14,8 +14,5 @@
     "resolveJsonModule": true,
     "jsx": "react",
     "lib": ["ES2015", "DOM"]
-  },
-  "include": [
-    "./generated/index.ts"
-  ]
+  }
 }

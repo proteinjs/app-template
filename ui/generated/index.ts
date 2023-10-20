@@ -1,5 +1,6 @@
 /** Load Dependency Source Graphs */
 
+import '@brentbahry/app-template-tables';
 import '@brentbahry/reflection';
 import '@emotion/react';
 import '@emotion/styled';
