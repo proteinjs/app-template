@@ -10,7 +10,7 @@ export class ExampleTable extends Table<Example> {
 	public name = 'example';
 	public columns = withRecordColumns<Example>({
 		name: new StringColumn('name'),
-		children: new ReferenceArrayColumn('children', this.name),
+		children: new ReferenceArrayColumn('children', this.name, true),
 		isRoot: new BooleanColumn('is_root'),
 	})
 };

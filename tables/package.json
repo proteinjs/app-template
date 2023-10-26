@@ -16,7 +16,8 @@
     },
     "dependencies": {
         "@brentbahry/reflection": "file:../../components/reflection",
-        "@proteinjs/db": "file:../../components/db/db"
+        "@proteinjs/db": "file:../../components/db/db",
+        "moment": "2.29.4"
     },
     "types": "./dist/generated/index.d.ts"
 }

@@ -2,6 +2,7 @@
 
 import '@brentbahry/reflection';
 import '@proteinjs/db';
+import 'moment';
 
 
 /** Generate Source Graph */
