@@ -8,7 +8,8 @@ export const serverConfig: ServerConfig = {
         bundlePaths: [
             'vendor.js',
             'app.js',
-        ]
+        ],
+        appEntryPath: path.join(__dirname, '../../../ui/generated/index.ts'),
     },
     authenticate: createAuthentication({ username: 'admin', password: 'admin' }),
     session: {
