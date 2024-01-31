@@ -45,6 +45,18 @@ module.exports = {
       webpack5esmInteropRule,
       // all files with a '.ts' or '.tsx' extension will be handled by 'ts-loader'
       { test: /\.tsx?$/, use: ['ts-loader'], exclude: /node_modules/ },
+      // image files
+      {
+        test: /\.(png|jpe?g|gif|svg)$/i,
+        use: [
+          {
+            loader: 'file-loader',
+            options: {
+              name: '[path][name].[ext]', // This line will keep the original path and filename
+            },
+          },
+        ],
+      },
     ],
   },
   optimization: {
