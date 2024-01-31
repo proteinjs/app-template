@@ -3,7 +3,8 @@
     "version": "0.1",
     "scripts": {
         "test": "jest",
-        "build": "reflection-build && webpack"
+        "build": "reflection-build && webpack",
+        "watch": "reflection-watch"
     },
     "devDependencies": {
         "@brentbahry/reflection-build": "file:../../components/reflection-build",
