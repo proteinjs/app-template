@@ -16,7 +16,7 @@
         "ts-jest": "^26.5.6"
     },
     "dependencies": {
-        "@brentbahry/app-template-tables": "file:../tables",
+        "@brentbahry/app-template-common": "file:../common",
         "@brentbahry/reflection": "file:../../components/reflection",
         "@proteinjs/db-driver": "file:../../components/db/driver",
         "@proteinjs/server": "file:../../components/server/server",

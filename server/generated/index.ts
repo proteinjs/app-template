@@ -1,6 +1,6 @@
 /** Load Dependency Source Graphs */
 
-import '@brentbahry/app-template-tables';
+import '@brentbahry/app-template-common';
 import '@brentbahry/reflection';
 import '@proteinjs/db-driver';
 import '@proteinjs/server';

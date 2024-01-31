@@ -1,11 +1,12 @@
 /** Load Dependency Source Graphs */
 
-import '@brentbahry/app-template-tables';
+import '@brentbahry/app-template-common';
 import '@brentbahry/reflection';
 import '@emotion/react';
 import '@emotion/styled';
 import '@mui/joy';
 import '@mui/material';
+import '@proteinjs/db-ui';
 import '@proteinjs/ui';
 import '@proteinjs/user';
 import 'react';

@@ -24,12 +24,13 @@
         "webpack-cli": "5.1.4"
     },
     "dependencies": {
-        "@brentbahry/app-template-tables": "file:../tables",
+        "@brentbahry/app-template-common": "file:../common",
         "@brentbahry/reflection": "file:../../components/reflection",
         "@emotion/react": "11.11.1",
         "@emotion/styled": "11.11.0",
         "@mui/joy": "5.0.0-beta.8",
         "@mui/material": "5.14.11",
+        "@proteinjs/db-ui": "file:../../components/db/ui",
         "@proteinjs/ui": "file:../../components/ui",
         "@proteinjs/user": "file:../../components/user",
         "react": "18.2.0",
