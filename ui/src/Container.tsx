@@ -1,24 +1,19 @@
 import React from 'react';
-import { CssVarsProvider, extendTheme } from '@mui/joy/styles';
+import { createTheme, ThemeProvider } from '@mui/material/styles';
 import { AuthenticatedPageContainer } from '@proteinjs/user';
 import { Page } from '@proteinjs/ui';
 
-const theme = extendTheme({
+const theme = createTheme({
   spacing: 8,
 });
 
-export function ThemedContainer(props: React.PropsWithChildren<{}>) {
-    return (
-            <CssVarsProvider theme={theme}>
-                {props.children}
-            </CssVarsProvider>
-    );
-}
-
 export function PageContainer(props: { page: Page }) {
-    return (
-        <ThemedContainer>
-            <AuthenticatedPageContainer appName='appName' page={props.page} />
-        </ThemedContainer>
-    );
+  return (
+    <ThemeProvider theme={theme}>
+      <AuthenticatedPageContainer
+        appName='appName'
+        page={props.page}
+      />
+    </ThemeProvider>
+  );
 }

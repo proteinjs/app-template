@@ -26,7 +26,6 @@ module.exports = {
     alias: {
       'react': path.join(__dirname, '/node_modules/react'),
       'process': 'process/browser',
-      '@mui/joy': path.join(__dirname, '/node_modules/@mui/joy'),
       '@mui/material': path.join(__dirname, '/node_modules/@mui/material'),
     },
     // provide shims for node libraries for webpack >= 5
