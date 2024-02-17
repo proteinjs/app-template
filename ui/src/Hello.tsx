@@ -1,5 +1,6 @@
 import React from 'react';
-import { Page, Form, Fields, textField, FormButtons, clearButton, FormPage } from '@proteinjs/ui';
+import { Page, Form, Fields, textField, FormButtons, clearButton, FormPage, NavMenuItem } from '@proteinjs/ui';
+import WavingHandIcon from '@mui/icons-material/WavingHand';
 
 export const helloPage: Page = {
   name: 'Hello',
@@ -15,6 +16,12 @@ export const helloPage: Page = {
     </FormPage>
   )
 }
+
+export const helloNavMenuItem: NavMenuItem = { 
+  name: 'Hello', 
+  action: helloPage.path as string,
+  icon: WavingHandIcon,
+};
 
 class HelloFields extends Fields {
   static create() {

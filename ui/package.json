@@ -29,6 +29,7 @@
         "@brentbahry/reflection": "file:../../components/reflection",
         "@emotion/react": "11.11.1",
         "@emotion/styled": "11.11.0",
+        "@mui/icons-material": "5.14.11",
         "@mui/material": "5.14.11",
         "@proteinjs/db-ui": "file:../../components/db/ui",
         "@proteinjs/ui": "file:../../components/ui",
