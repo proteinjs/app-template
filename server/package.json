@@ -7,7 +7,8 @@
         "test": "jest",
         "build": "reflection-build && tsc",
         "watch": "reflection-watch",
-        "dev": "DEVELOPMENT=true node dist/generated/index.js"
+        "dev": "DEVELOPMENT=true node dist/generated/index.js",
+        "server-dev": "DISABLE_HOT_CLIENT_BUILDS=true DEVELOPMENT=true node dist/generated/index.js"
     },
     "devDependencies": {
         "@brentbahry/reflection-build": "file:../../components/reflection-build",
