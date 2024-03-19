@@ -2,7 +2,7 @@
 
 import '@brentbahry/app-template-common';
 import '@brentbahry/reflection';
-import '@proteinjs/db-driver';
+import '@proteinjs/db-driver-knex';
 import '@proteinjs/server';
 import '@proteinjs/server-api';
 import '@proteinjs/user';

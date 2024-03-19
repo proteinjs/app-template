@@ -19,7 +19,7 @@
     "dependencies": {
         "@brentbahry/app-template-common": "file:../common",
         "@brentbahry/reflection": "file:../../components/reflection",
-        "@proteinjs/db-driver": "file:../../components/db/driver",
+        "@proteinjs/db-driver-knex": "file:../../components/db/drivers/knex",
         "@proteinjs/server": "file:../../components/server/server",
         "@proteinjs/server-api": "file:../../components/server/api",
         "@proteinjs/user": "file:../../components/user"
