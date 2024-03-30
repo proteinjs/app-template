@@ -1,6 +1,6 @@
 import path from 'path';
 import { ServerConfig } from '@proteinjs/server-api';
-import { createAuthentication, DbSessionStore } from '@proteinjs/user';
+import { createAuthentication, DbSessionStore } from '@proteinjs/user-server';
 
 export const serverConfig: ServerConfig = {
     staticContent: {

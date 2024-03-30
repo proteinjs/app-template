@@ -22,7 +22,7 @@
         "@proteinjs/db-driver-knex": "file:../../components/db/drivers/knex",
         "@proteinjs/server": "file:../../components/server/server",
         "@proteinjs/server-api": "file:../../components/server/api",
-        "@proteinjs/user": "file:../../components/user"
+        "@proteinjs/user-server": "file:../../components/user/server"
     },
     "types": "./dist/generated/index.d.ts"
 }

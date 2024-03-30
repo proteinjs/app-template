@@ -33,7 +33,7 @@
         "@mui/material": "5.14.11",
         "@proteinjs/db-ui": "file:../../components/db/ui",
         "@proteinjs/ui": "file:../../components/ui",
-        "@proteinjs/user": "file:../../components/user",
+        "@proteinjs/user-ui": "file:../../components/user/ui",
         "react": "18.2.0",
         "react-dom": "18.2.0"
     },

@@ -8,7 +8,7 @@ import '@mui/icons-material';
 import '@mui/material';
 import '@proteinjs/db-ui';
 import '@proteinjs/ui';
-import '@proteinjs/user';
+import '@proteinjs/user-ui';
 import 'react';
 import 'react-dom';
 
