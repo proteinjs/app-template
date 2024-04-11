@@ -5,7 +5,9 @@ import { Typography, Grid } from '@mui/material';
 export const splashPage: Page = {
   name: 'Splash Page',
   path: '/',
-  public: true,
+  auth: {
+    public: true,
+  },
   component: () => (
     <FormPage>
       <Grid 
