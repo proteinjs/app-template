@@ -1,1 +1,3 @@
-See the [Protein JS Monorepo](https://github.com/proteinjs/components) for usage instructions.
+# Overview
+
+Example [Protein Js](https://github.com/proteinjs/proteinjs) app
