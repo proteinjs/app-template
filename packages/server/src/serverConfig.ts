@@ -11,6 +11,9 @@ export const serverConfig: ServerConfig = {
         ],
         appEntryPath: path.join(__dirname, '../../../ui/generated/index.ts'),
     },
+    hotClientBuilds: {
+        nodeModulesPath: path.join(__dirname, '../../../ui/node_modules'),
+    },
     authenticate: createAuthentication({ username: 'admin', password: 'admin' }),
     session: {
         secret: 'totally secret',

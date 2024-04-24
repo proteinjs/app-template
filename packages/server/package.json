@@ -14,22 +14,16 @@
     },
     "dependencies": {
         "@proteinjs/app-template-common": "file:../common",
-        "@proteinjs/reflection": "1.0.6",
         "@proteinjs/db-driver-knex": "1.0.4",
-        "@proteinjs/server": "1.0.10",
-        "@proteinjs/server-api": "1.0.4",
+        "@proteinjs/reflection": "1.0.6",
+        "@proteinjs/server": "1.0.11",
+        "@proteinjs/server-api": "1.0.5",
         "@proteinjs/user-server": "1.0.2"
     },
     "devDependencies": {
         "@proteinjs/reflection-build": "1.0.10",
         "@types/jest": "^26.0.24",
         "jest": "^26.6.3",
-        "react": "18.2.0",
-        "ts-jest": "^26.5.6",
-        "@types/react": "18.2.23",
-        "@emotion/react": "11.11.1",
-        "@emotion/styled": "11.11.0",
-        "@mui/icons-material": "5.14.11",
-        "@mui/material": "5.14.11"
+        "ts-jest": "^26.5.6"
     }
 }
