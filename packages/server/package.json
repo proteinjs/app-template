@@ -1,6 +1,6 @@
 {
     "name": "@proteinjs/app-template-server",
-    "version": "0.0.3",
+    "version": "0.0.4",
     "private": true,
     "main": "./dist/generated/index.js",
     "types": "./dist/generated/index.d.ts",
@@ -14,14 +14,14 @@
     },
     "dependencies": {
         "@proteinjs/app-template-common": "file:../common",
-        "@proteinjs/db-driver-knex": "1.0.5",
-        "@proteinjs/reflection": "1.0.6",
-        "@proteinjs/server": "1.0.12",
-        "@proteinjs/server-api": "1.0.5",
-        "@proteinjs/user-server": "1.0.3"
+        "@proteinjs/db-driver-knex": "1.0.6",
+        "@proteinjs/reflection": "1.0.7",
+        "@proteinjs/server": "1.0.13",
+        "@proteinjs/server-api": "1.0.6",
+        "@proteinjs/user-server": "1.0.4"
     },
     "devDependencies": {
-        "@proteinjs/reflection-build": "1.0.10",
+        "@proteinjs/reflection-build": "1.0.11",
         "@types/jest": "^26.0.24",
         "jest": "^26.6.3",
         "ts-jest": "^26.5.6"
