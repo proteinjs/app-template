@@ -5,7 +5,7 @@
     "main": "./dist/generated/index.js",
     "types": "./dist/generated/index.d.ts",
     "scripts": {
-        "clean": "rm -rf dist/ generated/ node_modules/ package-lock.json",
+        "clean": "rm -rf dist/ generated/ node_modules/",
         "build": "reflection-build && webpack",
         "watch": "reflection-watch"
     },
