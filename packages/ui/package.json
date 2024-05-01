@@ -17,7 +17,7 @@
         "@proteinjs/app-template-common": "file:../common",
         "@proteinjs/db-ui": "1.0.11",
         "@proteinjs/reflection": "1.0.7",
-        "@proteinjs/ui": "1.0.7",
+        "@proteinjs/ui": "2.0.0",
         "@proteinjs/user-ui": "1.0.9",
         "react": "18.2.0",
         "react-dom": "18.2.0"

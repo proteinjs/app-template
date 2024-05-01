@@ -4,7 +4,7 @@ import WavingHandIcon from '@mui/icons-material/WavingHand';
 
 export const helloPage: Page = {
   name: 'Hello',
-  path: 'helloo',
+  path: 'hello',
   component: () => (
     <FormPage>
       <Form<HelloFields, typeof buttons>
