@@ -14,8 +14,8 @@
     },
     "dependencies": {
         "@proteinjs/app-template-common": "file:../common",
-        "@proteinjs/db": "1.0.12",
-        "@proteinjs/db-driver-knex": "1.0.11",
+        "@proteinjs/db": "1.0.13",
+        "@proteinjs/db-driver-knex": "1.0.12",
         "@proteinjs/reflection": "1.0.7",
         "@proteinjs/server": "1.0.17",
         "@proteinjs/server-api": "1.0.8",
