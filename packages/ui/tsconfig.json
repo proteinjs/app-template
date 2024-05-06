@@ -1,6 +1,6 @@
 {
   "compilerOptions": {
-    "rootDir": "./",
+    "rootDir": ".",
     "target": "es5",
     "module": "commonjs",
     "declaration": true,
@@ -14,6 +14,14 @@
     "forceConsistentCasingInFileNames": true,
     "resolveJsonModule": true,
     "jsx": "react",
-    "lib": ["ES2015", "DOM"]
+    "typeRoots": [
+      "./node_modules/@types"
+    ],
+    "baseUrl": ".",
+    "paths": {
+      "*": ["./node_modules/*"]
+    },
+    "lib": ["ES2015", "DOM"],
+    "preserveSymlinks": true
   }
 }
