@@ -1,5 +1,5 @@
 import React from 'react';
-import { createTheme, ThemeProvider } from '@mui/material/styles';
+import { createTheme, ThemeProvider } from '@mui/material';
 import { AuthenticatedPageContainer } from '@proteinjs/user-ui';
 import { Page } from '@proteinjs/ui';
 import { helloNavMenuItem } from './Hello';
