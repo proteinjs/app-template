@@ -7,6 +7,7 @@
     "scripts": {
         "clean": "rm -rf dist/ generated/ node_modules/",
         "build": "reflection-build && webpack",
+        "build-dev": "reflection-build && webpack --config webpack.config.dev.js",
         "watch": "reflection-watch"
     },
     "dependencies": {

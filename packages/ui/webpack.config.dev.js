@@ -12,15 +12,15 @@ const webpack5esmInteropRule = {
 
 module.exports = {
   mode: 'development',
-  devtool: 'source-map',
+  devtool: 'inline-source-map',
   entry: {
     app: './generated/index.ts',
+    // vendor: ['@material-ui/core', '@material-ui/styles']
   },
   output: {
-    filename: '[name].[contenthash].js', // Use content hash for cache busting
+    filename: '[name].js',
     path: path.join(__dirname, 'dist/bundles'),
-    library: '[name]',
-    clean: true, // Clean the output directory before emit
+    library: '[name]'
   },
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],

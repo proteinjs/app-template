@@ -5,10 +5,7 @@ import { createAuthentication, DbSessionStore } from '@proteinjs/user-server';
 export const serverConfig: ServerConfig = {
     staticContent: {
         staticContentDir: path.join(__dirname, '../../../ui/dist'),
-        bundlePaths: [
-            'vendor.js',
-            'app.js',
-        ],
+        bundlesDir: 'bundles',
         appEntryPath: path.join(__dirname, '../../../ui/generated/index.ts'),
     },
     hotClientBuilds: {
