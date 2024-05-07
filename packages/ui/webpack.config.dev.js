@@ -74,8 +74,8 @@ module.exports = {
   },
   plugins: [
     new webpack.ProvidePlugin({
-        process: 'process/browser',                 
-        Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',                 
+      Buffer: ['buffer', 'Buffer'],
     }),
   ],
 };
