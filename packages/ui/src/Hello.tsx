@@ -26,10 +26,10 @@ class HelloFields extends Fields {
   name = textField<HelloFields>({
     name: 'name',
     onLoad: async (fields: HelloFields) => {
-      console.log(`Running onLoad for name`);
+      console.log('Running onLoad for name');
     },
     onChange: async (value: string, fields: HelloFields) => {
-      console.log(`Running onChange for name`);
+      console.log('Running onChange for name');
       if (!fields.description.field.accessibility) fields.description.field.accessibility = {};
       if (value == 'a') {
         fields.description.field.accessibility.required = true;
@@ -42,7 +42,7 @@ class HelloFields extends Fields {
   description = textField<HelloFields>({
     name: 'description',
     onLoad: async (fields: HelloFields) => {
-      console.log(`Running onLoad for description`);
+      console.log('Running onLoad for description');
     },
     isPassword: true,
   });
