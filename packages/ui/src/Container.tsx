@@ -11,13 +11,7 @@ const theme = createTheme({
 export function PageContainer(props: { page: Page }) {
   return (
     <ThemeProvider theme={theme}>
-      <AuthenticatedPageContainer
-        appName='appName'
-        page={props.page}
-        navMenuItems={[
-          helloNavMenuItem,
-        ]}
-      />
+      <AuthenticatedPageContainer appName='appName' page={props.page} navMenuItems={[helloNavMenuItem]} />
     </ThemeProvider>
   );
 }
