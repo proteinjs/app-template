@@ -1,11 +1,10 @@
 module.exports = {
-  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended', 'prettier'],
+  extends: ['eslint:recommended', 'plugin:@typescript-eslint/recommended'],
   parser: '@typescript-eslint/parser',
-  plugins: ['@typescript-eslint', 'prettier'],
+  plugins: ['@typescript-eslint'],
   root: true,
   ignorePatterns: ['**/dist/*', '**/node_modules/*'],
   rules: {
-    'prettier/prettier': ['error'],
     indent: ['error', 2],
     quotes: ['error', 'single'],
     'eol-last': ['error', 'always'],
