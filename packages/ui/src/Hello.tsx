@@ -35,9 +35,14 @@ class HelloFields extends Fields {
     },
     onChange: async (value: string, fields: HelloFields) => {
       console.log('Running onChange for name');
-      if (!fields.description.field.accessibility) fields.description.field.accessibility = {};
-      if (value == 'a') fields.description.field.accessibility.required = true;
-      else fields.description.field.accessibility.required = false;
+      if (!fields.description.field.accessibility) {
+        fields.description.field.accessibility = {};
+      }
+      if (value == 'a') {
+        fields.description.field.accessibility.required = true;
+      } else {
+        fields.description.field.accessibility.required = false;
+      }
     },
   });
 
