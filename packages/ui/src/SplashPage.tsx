@@ -10,22 +10,14 @@ export const splashPage: Page = {
   },
   component: () => (
     <FormPage>
-      <Grid 
-        container 
-        direction='column' 
-        spacing={2}
-      >
+      <Grid container direction='column' spacing={2}>
         <Grid item>
-          <Typography variant='h4'>
-            Welcome to appName!
-          </Typography>
+          <Typography variant='h4'>Welcome to appName!</Typography>
         </Grid>
         <Grid item>
-          <Typography>
-            Check out the @proteinjs/ui package for reusable components
-          </Typography>
+          <Typography>Check out the @proteinjs/ui package for reusable components</Typography>
         </Grid>
       </Grid>
     </FormPage>
   ),
-}
+};

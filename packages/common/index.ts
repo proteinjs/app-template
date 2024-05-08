@@ -1,1 +1,1 @@
-export * from './src/ExampleTable'
+export * from './src/ExampleTable';

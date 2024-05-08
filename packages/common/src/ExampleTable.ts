@@ -1,9 +1,9 @@
 import { Table, StringColumn, ReferenceArrayColumn, Record, withRecordColumns, BooleanColumn, ReferenceArray } from '@proteinjs/db';
 
 export interface Example extends Record {
-	name: string;
-	children?: ReferenceArray<Example>;
-	isRoot?: boolean;
+  name: string;
+  children?: ReferenceArray<Example>;
+  isRoot?: boolean;
 }
 
 export class ExampleTable extends Table<Example> {
@@ -12,5 +12,5 @@ export class ExampleTable extends Table<Example> {
     name: new StringColumn('name'),
     children: new ReferenceArrayColumn('children', this.name, true),
     isRoot: new BooleanColumn('is_root'),
-  })
+  });
 }

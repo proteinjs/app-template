@@ -14,7 +14,7 @@ export const serverConfig: ServerConfig = {
   authenticate: createAuthentication({ username: 'admin', password: 'admin' }),
   session: {
     secret: 'totally secret',
-    store: new DbSessionStore()
+    store: new DbSessionStore(),
   },
   port: 3000,
-}
+};
