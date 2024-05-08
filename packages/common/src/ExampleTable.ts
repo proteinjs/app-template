@@ -1,4 +1,12 @@
-import { Table, StringColumn, ReferenceArrayColumn, Record, withRecordColumns, BooleanColumn, ReferenceArray } from '@proteinjs/db';
+import {
+  Table,
+  StringColumn,
+  ReferenceArrayColumn,
+  Record,
+  withRecordColumns,
+  BooleanColumn,
+  ReferenceArray,
+} from '@proteinjs/db';
 
 export interface Example extends Record {
   name: string;

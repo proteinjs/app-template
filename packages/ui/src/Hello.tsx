@@ -7,7 +7,12 @@ export const helloPage: Page = {
   path: 'hello',
   component: () => (
     <FormPage>
-      <Form<HelloFields, typeof buttons> name='Hello' createFields={() => new HelloFields()} fieldLayout={['name', 'description']} buttons={buttons} />
+      <Form<HelloFields, typeof buttons>
+        name='Hello'
+        createFields={() => new HelloFields()}
+        fieldLayout={['name', 'description']}
+        buttons={buttons}
+      />
     </FormPage>
   ),
 };
