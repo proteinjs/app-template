@@ -1,5 +1,5 @@
-import { DbDriver, DefaultDbDriverFactory } from '@proteinjs/db'
-import { KnexDriver } from '@proteinjs/db-driver-knex'
+import { DbDriver, DefaultDbDriverFactory } from '@proteinjs/db';
+import { KnexDriver } from '@proteinjs/db-driver-knex';
 
 export class DbDriverFactory implements DefaultDbDriverFactory {
   getDbDriver(): DbDriver {

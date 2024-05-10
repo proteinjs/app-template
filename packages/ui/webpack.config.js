@@ -6,8 +6,8 @@ var webpack = require('webpack');
 const webpack5esmInteropRule = {
   test: /\.m?js/,
   resolve: {
-    fullySpecified: false
-  }
+    fullySpecified: false,
+  },
 };
 
 module.exports = {
@@ -25,19 +25,19 @@ module.exports = {
   resolve: {
     extensions: ['.tsx', '.ts', '.js', '.json'],
     alias: {
-      'react': path.join(__dirname, '/node_modules/react'),
-      'process': 'process/browser',
+      react: path.join(__dirname, '/node_modules/react'),
+      process: 'process/browser',
       '@mui/material': path.join(__dirname, '/node_modules/@mui/material'),
       '@mui/icons-material': path.join(__dirname, '/node_modules/@mui/icons-material'),
     },
     // provide shims for node libraries for webpack >= 5
-    fallback: { 
-      'crypto': require.resolve('crypto-browserify'),
-      'util': require.resolve('util/'),
-      'events': require.resolve('events/'),
-      'url': require.resolve('url/'),
-      'buffer': require.resolve('buffer/'),
-      'stream': require.resolve('stream-browserify'),
+    fallback: {
+      crypto: require.resolve('crypto-browserify'),
+      util: require.resolve('util/'),
+      events: require.resolve('events/'),
+      url: require.resolve('url/'),
+      buffer: require.resolve('buffer/'),
+      stream: require.resolve('stream-browserify'),
       'process/browser': require.resolve('process/browser'),
     },
   },
@@ -64,18 +64,18 @@ module.exports = {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/]/,  // Matches node_modules folder
+          test: /[\\/]node_modules[\\/]/, // Matches node_modules folder
           name: 'vendor',
           chunks: 'all',
-          priority: -10
-        }
-      }
-    }
+          priority: -10,
+        },
+      },
+    },
   },
   plugins: [
     new webpack.ProvidePlugin({
-        process: 'process/browser',                 
-        Buffer: ['buffer', 'Buffer'],
+      process: 'process/browser',
+      Buffer: ['buffer', 'Buffer'],
     }),
   ],
 };
