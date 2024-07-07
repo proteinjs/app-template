@@ -1,6 +1,6 @@
 {
   "name": "@proteinjs/app-template-server",
-  "version": "0.0.25",
+  "version": "0.0.26",
   "private": true,
   "main": "./dist/generated/index.js",
   "types": "./dist/generated/index.d.ts",
@@ -14,15 +14,15 @@
   },
   "dependencies": {
     "@proteinjs/app-template-common": "file:../common",
-    "@proteinjs/db": "1.2.0",
-    "@proteinjs/db-driver-knex": "1.1.3",
+    "@proteinjs/db": "1.2.1",
+    "@proteinjs/db-driver-knex": "1.1.4",
     "@proteinjs/reflection": "1.1.6",
-    "@proteinjs/server": "1.4.1",
-    "@proteinjs/server-api": "1.3.2",
-    "@proteinjs/user-server": "1.0.30"
+    "@proteinjs/server": "1.4.2",
+    "@proteinjs/server-api": "1.3.3",
+    "@proteinjs/user-server": "1.0.31"
   },
   "devDependencies": {
-    "@proteinjs/reflection-build": "1.0.20",
+    "@proteinjs/reflection-build": "1.0.21",
     "@types/jest": "29.5.5",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
