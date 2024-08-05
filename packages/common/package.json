@@ -1,6 +1,6 @@
 {
   "name": "@proteinjs/app-template-common",
-  "version": "0.0.31",
+  "version": "0.0.32",
   "private": true,
   "main": "./dist/generated/index.js",
   "types": "./dist/generated/index.d.ts",
@@ -14,12 +14,12 @@
     "start": "node ./dist/index.js"
   },
   "dependencies": {
-    "@proteinjs/db": "1.5.1",
-    "@proteinjs/reflection": "1.1.7",
+    "@proteinjs/db": "1.5.3",
+    "@proteinjs/reflection": "1.1.8",
     "moment": "2.29.4"
   },
   "devDependencies": {
-    "@proteinjs/reflection-build": "1.0.22",
+    "@proteinjs/reflection-build": "1.0.23",
     "@types/jest": "29.5.5",
     "@typescript-eslint/eslint-plugin": "7.8.0",
     "@typescript-eslint/parser": "7.8.0",
