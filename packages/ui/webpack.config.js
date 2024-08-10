@@ -1,8 +1,11 @@
-var path = require('path');
-var webpack = require('webpack');
+const path = require('path');
+const webpack = require('webpack');
+const TerserPlugin = require('terser-webpack-plugin');
 
-// see  https://github.com/webpack/webpack/issues/11467#issuecomment-808618999/
-// for details
+/**
+ * ESM interop rule
+ * see https://github.com/webpack/webpack/issues/11467#issuecomment-808618999/ for details
+ */
 const webpack5esmInteropRule = {
   test: /\.m?js/,
   resolve: {
@@ -11,8 +14,7 @@ const webpack5esmInteropRule = {
 };
 
 module.exports = {
-  mode: 'development',
-  devtool: 'source-map',
+  mode: 'production',
   entry: {
     app: './generated/index.ts',
   },
@@ -39,6 +41,7 @@ module.exports = {
       buffer: require.resolve('buffer/'),
       stream: require.resolve('stream-browserify'),
       'process/browser': require.resolve('process/browser'),
+      path: require.resolve('path-browserify'),
     },
   },
   module: {
@@ -61,10 +64,18 @@ module.exports = {
     ],
   },
   optimization: {
+    minimizer: [
+      new TerserPlugin({
+        terserOptions: {
+          keep_classnames: true,
+          keep_fnames: true,
+        },
+      }),
+    ],
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/]/, // Matches node_modules folder
+          test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
           chunks: 'all',
           priority: -10,

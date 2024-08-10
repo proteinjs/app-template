@@ -1,8 +1,10 @@
 var path = require('path');
 var webpack = require('webpack');
 
-// see  https://github.com/webpack/webpack/issues/11467#issuecomment-808618999/
-// for details
+/**
+ * ESM interop rule
+ * see https://github.com/webpack/webpack/issues/11467#issuecomment-808618999/ for details
+ */
 const webpack5esmInteropRule = {
   test: /\.m?js/,
   resolve: {
@@ -15,7 +17,6 @@ module.exports = {
   devtool: 'inline-source-map',
   entry: {
     app: './generated/index.ts',
-    // vendor: ['@material-ui/core', '@material-ui/styles']
   },
   output: {
     filename: '[name].js',
@@ -39,6 +40,7 @@ module.exports = {
       buffer: require.resolve('buffer/'),
       stream: require.resolve('stream-browserify'),
       'process/browser': require.resolve('process/browser'),
+      path: require.resolve('path-browserify'),
     },
   },
   module: {
@@ -64,7 +66,7 @@ module.exports = {
     splitChunks: {
       cacheGroups: {
         vendor: {
-          test: /[\\/]node_modules[\\/]/, // Matches node_modules folder
+          test: /[\\/]node_modules[\\/]/,
           name: 'vendor',
           chunks: 'all',
           priority: -10,
