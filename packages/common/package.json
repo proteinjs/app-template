@@ -1,6 +1,6 @@
 {
   "name": "@proteinjs/app-template-common",
-  "version": "0.0.36",
+  "version": "0.0.37",
   "private": true,
   "main": "./dist/generated/index.js",
   "types": "./dist/generated/index.d.ts",
@@ -14,7 +14,7 @@
     "start": "node ./dist/index.js"
   },
   "dependencies": {
-    "@proteinjs/db": "1.5.8",
+    "@proteinjs/db": "1.5.9",
     "@proteinjs/reflection": "1.1.9",
     "moment": "2.29.4"
   },
