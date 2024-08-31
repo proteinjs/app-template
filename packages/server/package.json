@@ -1,6 +1,6 @@
 {
   "name": "@proteinjs/app-template-server",
-  "version": "0.0.47",
+  "version": "0.0.48",
   "private": true,
   "main": "./dist/generated/index.js",
   "types": "./dist/generated/index.d.ts",
@@ -17,9 +17,9 @@
     "@proteinjs/db": "1.5.11",
     "@proteinjs/db-driver-knex": "1.1.21",
     "@proteinjs/reflection": "1.1.9",
-    "@proteinjs/server": "2.0.0",
+    "@proteinjs/server": "2.0.1",
     "@proteinjs/server-api": "1.5.0",
-    "@proteinjs/user-server": "1.2.14"
+    "@proteinjs/user-server": "1.2.15"
   },
   "devDependencies": {
     "@proteinjs/reflection-build": "1.0.24",
