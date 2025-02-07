@@ -1,6 +1,6 @@
 {
   "name": "@proteinjs/app-template-server",
-  "version": "0.0.59",
+  "version": "0.0.60",
   "private": true,
   "main": "./dist/generated/index.js",
   "types": "./dist/generated/index.d.ts",
@@ -19,7 +19,7 @@
     "@proteinjs/reflection": "1.1.9",
     "@proteinjs/server": "2.1.1",
     "@proteinjs/server-api": "1.5.0",
-    "@proteinjs/user-server": "1.2.27"
+    "@proteinjs/user-server": "1.2.28"
   },
   "devDependencies": {
     "@proteinjs/reflection-build": "1.0.24",
