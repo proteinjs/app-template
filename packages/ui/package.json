@@ -8,7 +8,8 @@
     "clean": "rm -rf dist/ generated/ node_modules/",
     "build": "reflection-build && webpack",
     "build-dev": "reflection-build && webpack --config webpack.config.dev.js",
-    "watch": "reflection-watch"
+    "watch-build": "reflection-build && tsc",
+    "watch": "BUILD_SCRIPT=watch-build reflection-watch"
   },
   "dependencies": {
     "@emotion/react": "11.11.1",
