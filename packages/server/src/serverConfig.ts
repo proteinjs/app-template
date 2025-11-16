@@ -10,6 +10,7 @@ export const serverConfig: ServerConfig = {
   },
   hotClientBuilds: {
     nodeModulesPath: path.join(__dirname, '../../../ui/node_modules'),
+    webpackConfigPath: path.join(__dirname, '../../../ui/webpack.config.dev.js'),
   },
   authenticate: createAuthentication({ username: 'admin', password: 'admin' }),
   session: {
